@@ -1,7 +1,7 @@
 # Makefile
 
 # 可执行文件名称
-BINARY_NAME := exec
+BINARY_NAME := traffic-tester-exec
 
 # 架构和操作系统
 GOOS := linux

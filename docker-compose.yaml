@@ -4,7 +4,8 @@ services:
     container_name: traffic-tester
     restart: unless-stopped
     volumes:
-      - ./config:/app/config       # 宿主机 ./config 映射到容器 /app/config
-      - ./logs:/app/log            # 宿主机 ./logs 映射到容器 /app/log
+      - ./config:/app/config
+      - ./logs:/app/logs
+      - /etc/localtime:/etc/localtime:ro
     working_dir: /app
-    entrypoint: ["/app/exec"]
+    entrypoint: ["/app/traffic-tester-exec"]

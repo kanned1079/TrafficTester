@@ -1,0 +1,21 @@
+# 每个URL都会被随机选择下载
+urls:
+  - https://static-d.iqiyi.com/ext/common/iQIYIMedia_271.dmg
+  - https://youku-cpms-cdn.youku.com/apk/19babfbcea8e1838/latest.apk
+  - https://api-takumi.mihoyo.com/event/download_porter/link/hkrpg_cn/official/pc_default
+  - https://dldir1v6.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.22_251023_x64_01.exe
+  - https://autopatchcn.yuanshen.com/client_app/download/Android/20251013190916_G4Heg91Ag9UeE8Ps/ydbackup316/yuanshen_6.1.0.apk
+  - https://www.douyin.com/download/pc/obj/douyin-pc-web/douyin-pc-client/7044145585217083655/releases/237387207/6.7.0/darwin-universal/douyin-v6.7.0-darwin-universal.dmg
+  - https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/android_default
+
+log_file: "logs/traffic.log"
+max_concurrency: 3
+
+min_speed: 50.0
+max_speed: 300.0
+
+min_bytes_per_download: 100000000
+max_bytes_per_download: 500000000
+
+min_interval_sec: 30
+max_interval_sec: 120
